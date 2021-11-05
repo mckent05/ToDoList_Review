@@ -1,3 +1,7 @@
+export {
+  addTask, editToDo, deleteToDo, clearCompleted,
+};
+
 import { displayAlert, localstorage } from './list.js';
 
 const addTask = (description, completed, index) => {
@@ -44,8 +48,4 @@ const clearCompleted = (list) => {
   reArrangeIndex(list);
   localstorage(list);
   window.location.reload();
-};
-
-export {
-  addTask, editToDo, deleteToDo, clearCompleted,
 };
