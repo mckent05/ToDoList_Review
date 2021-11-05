@@ -26,8 +26,9 @@ const editToDo = (list, input, e) => {
 };
 
 const reArrangeIndex = (list) => {
-  list.forEach((item, index) => item.index = index + 1);
-};
+  list.forEach((item, index) => {
+    item.index = index + 1);
+});
 
 const deleteToDo = (list, e) => {
   const desc = e.currentTarget.parentElement.nextSibling.value;
