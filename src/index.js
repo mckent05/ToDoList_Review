@@ -64,10 +64,13 @@ const createToDo = (doList, index) => {
     editToDo(toDoList, input, e, icon);
   });
 
-  icon.addEventListener('click', (e) => deleteToDo(toDoList, e));
+  icon.addEventListener('click', (e) => {
+    deleteToDo(toDoList, e);
+  });
 
-  clear.addEventListener('click', () => clearCompleted(toDoList));
-};
+  clear.addEventListener('click', () => {
+    clearCompleted(toDoList);
+  });
 
 const inputDiv = document.createElement('div');
 inputDiv.classList.add('inputdiv');
